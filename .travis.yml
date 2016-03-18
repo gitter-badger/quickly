@@ -1,4 +1,7 @@
+sudo: required
+dist: trusty
 language: node_js
+
 install:
   - npm install -g gulp
   - npm install
@@ -13,6 +16,7 @@ install:
   - sudo apt-get -y install qt55declarative
   - sudo apt-get -y install qt55tools
   - sudo apt-get -y install xvfb
+  
 script:
   - source /opt/qt55/bin/qt55-env.sh
   - xvfb-run -a -s "-screen 0 800x600x24" ctest -V
