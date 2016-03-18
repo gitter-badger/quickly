@@ -33,6 +33,7 @@
     "yargs": "^4.3.1"
   },
   "devDependencies": {
+    "babel-register": "^6.7.2",
     "mocha": "^2.2.5"
   }
 }
